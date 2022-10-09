@@ -1,13 +1,170 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{ 
+    width: 100%;
+    height: 100%;
+    color: white;
+    margin: 0;
+    background-color: rgb(49, 46, 51);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#container{
+    width: 100%;
+    
+}
+#calendar{  
+
+}
+#header{
+    text-align: center;
+}
+    #month{
+        width: 100%;
+        height: 6vh;
+
+        text-align: center;
+    }
+    .day-of-the-week{
+        width:13.71428571428571%;
+        padding-top: 2%;
+        padding-bottom:2%;
+
+        margin-left:0.5%;
+        margin-top: 0.5%;
+        margin-bottom: 0.5%;
+
+        text-align: center;
+
+        color:black;
+
+        background-color:#decdf5ff;
+        
+        border-radius: 2.5px;
+
+        float: left;
+    }
+
+    .day{
+        width:13.70428571428571%;
+        height: 12vh;
+
+        margin-left:0.5%;
+        margin-bottom: 0.5%;
+
+        border-radius: 2.5px;
+
+        text-indent:5px;
+        background-color: rgb(64, 58, 68);
+
+        float:left;
+    }
+    .day:hover{
+        background-color: rgb(85, 77, 92);
+    }
+#options-button{
+    width:50px;
+    height: 50px;
+    margin-bottom: 5%;
+    margin-left: 2.5%;
+
+    border-radius: 50%;
+    background-color:#1b998bff;
+
+    text-align:center;
+    font-size:50px;
+    
+    bottom:0;
+
+    position: fixed;
+
+    z-index:99;
+    /*rotation animation*/
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+#options-button::before {
+    content: "+";
+    height:100%;
+    width:100%;
+    font-size:100%;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    font-family:courier;
+    color:#decdf5ff;
+    
+  }
+  #options-button:hover{
+    background-color:rgb(25, 139, 125);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    
+  }
+
+#options-bar{
+    height: 500px;
+    width: 250px;
+
+    border-radius: 5px;
+
+    background-color: #656176ff;
+    
+    left: 2.5%;
+    bottom:17.5%;
+    position:fixed;
+    z-index:99;
+}
+    .options{
+        height: 5.15vh;
+        
+        border-radius: 5px;
+
+        padding-top: 2.5vh;
+        text-align:center;
+    }
+        .options:hover{
+            background-color: rgb(85, 82, 100);
+        }
+
+.options-screen{
+    width:70%;
+    height: 75vh;
+
+    
+
+    margin-left:15%;
+    margin-right:15%;
+
+    border-radius:10px;
+
+    background-color:#656176ff;
+
+    position:fixed;
+    z-index:99;
+}
+    .title{
+        height:10%;
+        padding-top:2.5%;
+        margin-bottom:3.5%;
+
+        text-align: center;
+    }
+    input[type="text"]
+    {
+        font-size:24px;
+    }   
+    .options-textarea{
+        padding-left: 10%;
+        padding-right: 10%;
+
+        font-size:24px;
+
+    }
+#colors{
+    color: #1b998bff;
+    color: #f8f1ffff;
+    color: #decdf5ff;
+    color: #656176ff;
+    color: #534d56ff;
 }
